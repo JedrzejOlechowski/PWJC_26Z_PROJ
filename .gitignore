@@ -1,0 +1,7 @@
+# Skompilowane programy
+main
+a.out
+*.o
+
+# Katalogi budowania CMake
+build/
