@@ -1,0 +1,5 @@
+dimension 4
+points 3
+A1 0 0 0 0
+A2 0 0 0 10
+A3 6 6 6 6

@@ -1,0 +1,13 @@
+mode exact
+status global_optimum
+dimension 2
+threshold 2
+unmatched_penalty 1
+matches 0
+unmatched_a 0
+unmatched_b 2
+B1
+B2
+distance_cost 0
+penalty_cost 2
+total_cost 2

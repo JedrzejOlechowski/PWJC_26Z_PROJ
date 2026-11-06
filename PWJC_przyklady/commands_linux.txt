@@ -1,0 +1,13 @@
+./prog data/basic_A.txt data/basic_B.txt 1.5 1 result_01_2d_basic.txt --mode exact --threads 1
+./prog data/conflict_A.txt data/conflict_B.txt 1.2 1 result_02_2d_conflict.txt --mode exact --threads 1
+./prog data/3d_A.txt data/3d_B.txt 2 1.5 result_03_3d_unequal.txt --mode exact --threads 1
+./prog data/4d_A.txt data/4d_B.txt 4 1 result_04_4d_penalty.txt --mode exact --threads 1
+./prog data/single_A.txt data/single_B.txt 4 10 result_05_single_threshold.txt --mode exact --threads 1
+./prog data/single_A.txt data/single_B.txt 5 2 result_06_single_penalty.txt --mode exact --threads 1
+./prog data/single_A.txt data/single_B.txt 5 3 result_07_single_match.txt --mode exact --threads 1
+./prog data/single_A.txt data/single_B.txt 5 2.5 result_08_single_tie.txt --mode exact --threads 1
+./prog data/empty_A.txt data/empty_B.txt 2 1 result_09_empty_a.txt --mode exact --threads 1
+./prog data/duplicates_A.txt data/duplicates_B.txt 0 1 result_10_duplicates.txt --mode exact --threads 1
+./prog data/both_empty_A.txt data/both_empty_B.txt 0 1 result_11_both_empty.txt --mode exact --threads 1
+
+./prog data/large_4d_A.txt data/large_4d_B.txt 0.75 0.4 result_large.txt --mode local --threads 4

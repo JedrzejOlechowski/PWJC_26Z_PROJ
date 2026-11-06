@@ -1,0 +1,12 @@
+﻿case_id,file_a,file_b,threshold,unmatched_penalty,expected_cost,possible_match_counts,expected_file,note
+01_2d_basic,data/basic_A.txt,data/basic_B.txt,1.5,1,4,2,expected/01_2d_basic.txt,Dwie pary i po jednym punkcie bez partnera.
+02_2d_conflict,data/conflict_A.txt,data/conflict_B.txt,1.2,1,2.1,2,expected/02_2d_conflict.txt,Najbliższa para nie należy do optimum; zachłannie można otrzymać koszt 2.9.
+03_3d_unequal,data/3d_A.txt,data/3d_B.txt,2,1.5,4.5,2,expected/03_3d_unequal.txt,Różne liczebności; odległość jednej pary jest równa progowi.
+04_4d_penalty,data/4d_A.txt,data/4d_B.txt,4,1,4,2,expected/04_4d_penalty.txt,Czwarty wymiar zmienia pary; dopuszczalna para o koszcie 3 przegrywa z karą 2.
+05_single_threshold,data/single_A.txt,data/single_B.txt,4,10,20,0,expected/05_single_threshold.txt,"Para zabroniona progiem, mimo wysokiej kary."
+06_single_penalty,data/single_A.txt,data/single_B.txt,5,2,4,0,expected/06_single_penalty.txt,"Para dopuszczalna, lecz za droga w porównaniu z 2*kara."
+07_single_match,data/single_A.txt,data/single_B.txt,5,3,5,1,expected/07_single_match.txt,"Para w granicy progu, korzystniejsza od braku przypisania."
+08_single_tie,data/single_A.txt,data/single_B.txt,5,2.5,5,0 lub 1,expected/08_single_tie.txt,Remis: poprawne optimum ma zero lub jedną parę. Plik wzorcowy pokazuje zero.
+09_empty_a,data/empty_A.txt,data/empty_B.txt,2,1,2,0,expected/09_empty_a.txt,Pusty zbiór A; oba punkty B są bez partnera.
+10_duplicates,data/duplicates_A.txt,data/duplicates_B.txt,0,1,0,2,expected/10_duplicates.txt,Powtórzone współrzędne są legalne; oba pełne skojarzenia są optymalne.
+11_both_empty,data/both_empty_A.txt,data/both_empty_B.txt,0,1,0,0,expected/11_both_empty.txt,"Dwa puste zbiory, koszt zero."

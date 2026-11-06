@@ -1,0 +1,4 @@
+dimension 2
+points 2
+A1 0 0
+A2 2 0

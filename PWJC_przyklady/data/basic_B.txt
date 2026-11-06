@@ -1,0 +1,5 @@
+dimension 2
+points 3
+B1 0 1
+B2 4 1
+B3 12 4

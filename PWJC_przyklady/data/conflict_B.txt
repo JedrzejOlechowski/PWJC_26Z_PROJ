@@ -1,0 +1,4 @@
+dimension 2
+points 2
+B1 0.9 0
+B2 -1 0

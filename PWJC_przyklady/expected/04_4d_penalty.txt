@@ -1,0 +1,15 @@
+mode exact
+status global_optimum
+dimension 4
+threshold 4
+unmatched_penalty 1
+matches 2
+A1 B2 1
+A2 B1 1
+unmatched_a 1
+A3
+unmatched_b 1
+B3
+distance_cost 2
+penalty_cost 2
+total_cost 4
