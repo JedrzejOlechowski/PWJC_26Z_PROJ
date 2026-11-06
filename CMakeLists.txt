@@ -22,7 +22,15 @@ add_executable(test_data_parser
     DataLoader.cpp
 )
 
+add_executable(test_data_model
+    tests/test_data_model.cpp
+)
+
+target_compile_definitions(test_data_parser PRIVATE PROJECT_SOURCE_DIR="${CMAKE_SOURCE_DIR}")
+
 target_link_libraries(test_data_parser PRIVATE Catch2::Catch2WithMain)
+target_link_libraries(test_data_model PRIVATE Catch2::Catch2WithMain)
 
 include(CTest)
 add_test(NAME data_parser COMMAND test_data_parser)
+add_test(NAME data_model COMMAND test_data_model)
