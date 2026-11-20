@@ -15,7 +15,10 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(prog main.cpp)
+add_executable(prog
+    main.cpp
+    DataLoader.cpp
+)
 
 add_executable(test_data_parser
     tests/test_data_parser.cpp
