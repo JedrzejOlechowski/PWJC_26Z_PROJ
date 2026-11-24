@@ -6,6 +6,6 @@
 
 double squaredDistance(const Point& a, const Point& b);
 
-double euclideanDistandce(const Point& a, const Point& b);
+double euclideanDistance(const Point& a, const Point& b);
 
 #endif

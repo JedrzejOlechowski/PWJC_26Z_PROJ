@@ -18,6 +18,8 @@ FetchContent_MakeAvailable(Catch2)
 add_executable(prog
     main.cpp
     DataLoader.cpp
+    distances.cpp
+    BasicSolver.cpp
 )
 
 add_executable(test_data_parser
